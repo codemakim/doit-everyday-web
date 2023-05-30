@@ -1,14 +1,15 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
+import React from 'react';
 import Navigation from './components/Navigation';
 import RouteView from './components/RouteView';
 
-function App() {
+function App(): React.JSX.Element {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navigation/>
-        <RouteView/>
+        <Navigation />
+        <RouteView />
       </BrowserRouter>
     </div>
   );
