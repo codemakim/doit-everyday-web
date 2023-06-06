@@ -1,16 +1,11 @@
-import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
 import React from 'react';
-import Navigation from './components/Navigation';
-import RouteView from './components/RouteView';
+import MainAppBar from './components/MainAppBar';
 
 function App(): React.JSX.Element {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navigation />
-        <RouteView />
-      </BrowserRouter>
+      <MainAppBar />
     </div>
   );
 }
